@@ -82,19 +82,19 @@ class MainActivity : AppCompatActivity() {
         }
         btnPlus.setOnClickListener {
             model.action()
-            model.action = "addition"
+            model.action = Model.Actions.ADDITION.name
         }
         btnMinus.setOnClickListener {
             model.action()
-            model.action = "subtraction"
+            model.action = Model.Actions.SUBTRACTION.name
         }
         btnMultiplication.setOnClickListener {
             model.action()
-            model.action = "multiplication"
+            model.action = Model.Actions.MULTIPLICATION.name
         }
         btnDivision.setOnClickListener {
             model.action()
-            model.action = "division"
+            model.action = Model.Actions.DIVISION.name
         }
     }
 }

@@ -31,13 +31,17 @@ class Model {
         if (action != "") {
             second = number
             when (action) {
-                "addition" -> result = first + second
-                "subtraction" -> result = first - second
-                "multiplication" -> result = first * second
-                "division" -> result = first / second
+                Actions.ADDITION.name -> result = first + second
+                Actions.SUBTRACTION.name -> result = first - second
+                Actions.MULTIPLICATION.name -> result = first * second
+                Actions.DIVISION.name -> result = first / second
                 //division problem of doubles
             }
             number = result
         }
+    }
+
+    enum class Actions {
+        ADDITION, SUBTRACTION, MULTIPLICATION, DIVISION
     }
 }
